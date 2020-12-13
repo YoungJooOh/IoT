@@ -127,7 +127,7 @@ public class ListingDeviceHandler implements RequestHandler<Object, String> {
     }
 
 }
-'''
+```
 
 LogDeviceLambdaJavaProject - 디바이스 내부 상태 로그값을 불러온다
 해당 디바이스의 로그 값들을 DB를 참조해서 선택된 시간 사이의 데이터 값을 불러온다.
@@ -217,7 +217,7 @@ class Event {
     public String from;
     public String to;
 }
-'''
+```
 
 MonitoringLambda - 내부 고장(워터펌프)가 고장이 나면 SNS기능을 이용하여 사용자의 이메일로 알려준다
 ```javascript
@@ -281,7 +281,7 @@ public class Monitoring implements RequestHandler<Object, String> {
 
 }
 
-'''
+```
 
 RecordingDeviceDataJavaProject2 - 워터펌프가 고장나거나 수리가 된 경우에 해당 로그 값만을 DB에 저장한다.
 ```javascript
@@ -376,10 +376,10 @@ class Thing {
         }
     }
 }
-'''
+```
 
 RecordingDeviceDataLambdaJavaProject - 전체 로그값을 DB에 저장한다
-'''javascript
+```javascript
 package com.amazonaws.lambda.demo;
 
 import java.text.SimpleDateFormat;
@@ -445,10 +445,10 @@ class Thing {
         }
     }
 } 
-'''
+```
 
 UpdateDeviceLambdaJavaProject - 앱에서 디바이스를 제어할 수 있다. 
-'''javascript
+```javascript
 package com.amazonaws.lambda.demo;
 
 import java.nio.ByteBuffer;
@@ -517,5 +517,5 @@ class Tag {
         tagValue = v;
     }
 }
-'''
+```
 
